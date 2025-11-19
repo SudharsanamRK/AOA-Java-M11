@@ -1,30 +1,49 @@
-
 # EX 1B Power of 2
-## DATE:
-## AIM:
-To write a Java program to for given constraints.Given an integer n, return true if it is a power of two. Otherwise, return false.
+## DATE: 17/11/2025
 
+## Aim:
+Given an integer n, return true if it is a power of two. Otherwise, return false.
 An integer n is a power of two, if there exists an integer x such that n == 2x.
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+
+1. Start and read the integer num from the user.
+2. Compute sq as the integer value of the square root of num.
+3. Check whether sq * sq is equal to num.
+4. If equal, return true; otherwise, return false.
+5. Print the returned result and end the program.
 
 ## Program:
 ```
-/*
-Program to implement Reverse a String
-Developed by: 
-Register Number:  
-*/
+Program - Power of 2
+Developed by: Sudharsanam R K
+Register Number:  212222040163
+```
+```java
+import java.util.Scanner;
+
+public class Solution {
+
+    public boolean isPowerOfTwo(int n) {
+     if(n<=0){
+         return false;
+     }
+     return(n&(n-1))==0;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Solution sol = new Solution();
+        int n = scanner.nextInt();
+        boolean result = sol.isPowerOfTwo(n);
+        System.out.println(result);
+        scanner.close();
+    }
+}
 ```
 
 ## Output:
-
-
+<img width="342" height="161" alt="image" src="https://github.com/user-attachments/assets/34b9cc2d-784b-4fcb-9cce-ffa17bc25f4a" />
 
 ## Result:
 The program successfully implemented and the expected output is verified.
